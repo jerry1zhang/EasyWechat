@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:layout_marginTop="120px"
+        android:gravity="center|center_horizontal|center_vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_title"
+                android:textColor="@color/title"
+                android:textSize="80px"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textSize="35px"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/usernameval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/username" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/password"
+                android:textSize="35px" />
+
+            <EditText
+                android:id="@+id/passwordval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:textSize="35px"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/nicknameval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex"
+                android:textSize="35px"
+                android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:entries="@array/sexarray" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textSize="35px"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/phoneval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="35px"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/emailval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sign"
+                android:textSize="35px" />
+
+            <EditText
+                android:id="@+id/signval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agree"
+                android:layout_span="2"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_alibuybutton_blue"
+            android:elevation="0dp"
+            android:text="登录"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </TableLayout>
+</LinearLayout>
