@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/register_title"
                 android:textColor="@color/title"
-                android:textSize="80px"/>
+                android:textSize="80px" />
         </TableRow>
 
         <TableRow
@@ -33,9 +33,9 @@
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/username"
-                android:textSize="35px"
-                android:gravity="center"/>
+                android:textSize="35px" />
 
             <EditText
                 android:id="@+id/usernameval"
@@ -43,8 +43,21 @@
                 android:layout_height="wrap_content"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/username" />
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent" />
         </TableRow>
 
         <TableRow
@@ -78,9 +91,9 @@
                 android:id="@+id/nickname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/nickname"
-                android:textSize="35px"
-                android:gravity="center"/>
+                android:textSize="35px" />
 
             <EditText
                 android:id="@+id/nicknameval"
@@ -88,8 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
 
         </TableRow>
 
@@ -102,9 +114,9 @@
                 android:id="@+id/sex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/sex"
-                android:textSize="35px"
-                android:gravity="center"/>
+                android:textSize="35px" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -123,9 +135,9 @@
                 android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/phone"
-                android:textSize="35px"
-                android:gravity="center"/>
+                android:textSize="35px" />
 
             <EditText
                 android:id="@+id/phoneval"
@@ -133,8 +145,8 @@
                 android:layout_height="wrap_content"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -146,9 +158,9 @@
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/email"
-                android:textSize="35px"
-                android:gravity="center"/>
+                android:textSize="35px" />
 
             <EditText
                 android:id="@+id/emailval"
@@ -156,8 +168,8 @@
                 android:layout_height="wrap_content"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -179,8 +191,8 @@
                 android:layout_height="wrap_content"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -192,8 +204,17 @@
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/agree"
-                android:layout_span="2"/>
+                android:layout_span="1"
+                android:text="@string/agree" />
+
+            <TextView
+                android:id="@+id/protocolview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40px"
+                android:text="@string/protocol"
+                android:onClick="onClick"/>
 
 
         </TableRow>
@@ -208,7 +229,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_alibuybutton_blue"
             android:elevation="0dp"
-            android:text="登录"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            android:text="@string/register_title"
+            android:textSize="35px"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:onClick="onClick"/>
     </TableLayout>
+
 </LinearLayout>

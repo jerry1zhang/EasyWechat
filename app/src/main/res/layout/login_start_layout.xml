@@ -21,7 +21,8 @@
                 android:layout_height="wrap_content"
                 android:layout_span="3"
                 android:gravity="center"
-                android:text="简单聊天软件"
+                android:text="@string/login_title"
+                android:textColor="@color/title"
                 android:textSize="60px" />
         </TableRow>
 
@@ -30,18 +31,19 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/username"
+                android:textSize="35px"
+                android:gravity="center"/>
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/usernameval"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
                 android:layout_span="2"/>
         </TableRow>
 
@@ -50,19 +52,34 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/password"
+                android:textSize="35px"
+                android:gravity="center"/>
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/passwordval"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
                 android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_span="3"/>
         </TableRow>
 
         <TableRow
@@ -76,7 +93,8 @@
                 android:background="@drawable/bg_alibuybutton_blue"
                 android:elevation="0dp"
                 android:text="登录"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:onClick="onClick"/>
 
             <TextView
                 android:id="@+id/textView10"
@@ -89,7 +107,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_alibuybutton_red"
-                android:text="注册" />
+                android:text="注册"
+                android:onClick="onClick"/>
+
         </TableRow>
+
     </TableLayout>
 </LinearLayout>
