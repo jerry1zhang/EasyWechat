@@ -3,6 +3,10 @@
     <string name="login_title">简单聊天软件</string>
     <string name="register_title">注册</string>
     <string name="protocol_title">用户协议</string>
+    <string name="take_title">最近聊天</string>
+    <string name="link_title">通讯录</string>
+    <string name="set_title">设置</string>
+
     <string name="username">账号</string>
     <string name="nickname">昵称</string>
     <string name="sex">性别</string>
