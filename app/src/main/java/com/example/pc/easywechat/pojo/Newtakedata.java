@@ -1,14 +1,16 @@
 package com.example.pc.easywechat.pojo;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Zhhy on 2017/5/20.
  */
 
-public class newtakedata {
+public class Newtakedata {
     private String nid;
     private String touid;
     private String touidnickname;
-    private String touidpic_url;
+    private Bitmap touidpic_url;
     private String lasttime;
     private int status;
 
@@ -36,11 +38,11 @@ public class newtakedata {
         this.touidnickname = touidnickname;
     }
 
-    public String getTouidpic_url() {
+    public Bitmap getTouidpic_url() {
         return touidpic_url;
     }
 
-    public void setTouidpic_url(String touidpic_url) {
+    public void setTouidpic_url(Bitmap touidpic_url) {
         this.touidpic_url = touidpic_url;
     }
 

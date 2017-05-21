@@ -5,22 +5,22 @@ package com.example.pc.easywechat.pojo;
  */
 
 public class LoginBack extends BaseBack{
-    private userdate userdate;
-    private newtakedata[] newtakedata;
+    private Userdata Userdata;
+    private Newtakedata[] Newtakedata;
 
-    public com.example.pc.easywechat.pojo.userdate getUserdate() {
-        return userdate;
+    public Userdata getUserdata() {
+        return Userdata;
     }
 
-    public void setUserdate(com.example.pc.easywechat.pojo.userdate userdate) {
-        this.userdate = userdate;
+    public void setUserdata(Userdata Userdata) {
+        this.Userdata = Userdata;
     }
 
-    public com.example.pc.easywechat.pojo.newtakedata[] getNewtakedata() {
-        return newtakedata;
+    public Newtakedata[] getNewtakedata() {
+        return Newtakedata;
     }
 
-    public void setNewtakedata(com.example.pc.easywechat.pojo.newtakedata[] newtakedata) {
-        this.newtakedata = newtakedata;
+    public void setNewtakedata(Newtakedata[] Newtakedata) {
+        this.Newtakedata = Newtakedata;
     }
 }

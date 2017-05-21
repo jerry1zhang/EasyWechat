@@ -1,17 +1,19 @@
 package com.example.pc.easywechat.pojo;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Zhhy on 2017/5/20.
  */
 
-public class userdate {
+public class Userdata {
     private String uid;
     private String username;
     private String nickname;
     private int sex;
-    private String pic_url;
+    private Bitmap pic_url;
     private String lasttime;
-    private int phone;
+    private String phone;
     private String email;
     private String sign;
 
@@ -47,11 +49,11 @@ public class userdate {
         this.sex = sex;
     }
 
-    public String getPic_url() {
+    public Bitmap getPic_url() {
         return pic_url;
     }
 
-    public void setPic_url(String pic_url) {
+    public void setPic_url(Bitmap pic_url) {
         this.pic_url = pic_url;
     }
 
@@ -63,11 +65,11 @@ public class userdate {
         this.lasttime = lasttime;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

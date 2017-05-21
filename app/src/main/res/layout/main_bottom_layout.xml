@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_alibuybutton_blue" >
+    android:background="@color/back" >
     <LinearLayout
         android:id="@+id/ll_take"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:onClick="onClick">
 
         <ImageView
             android:id="@+id/iv_take"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="false"
-            android:background="@android:drawable/sym_action_chat" />
+            android:background="@mipmap/pic_take" />
 
         <TextView
             android:id="@+id/tv_take"
@@ -35,13 +36,14 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:onClick="onClick">
 
         <ImageView
             android:id="@+id/iv_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:drawable/ic_menu_call" />
+            android:background="@mipmap/pic_link" />
 
         <TextView
             android:id="@+id/tv_link"
@@ -59,13 +61,14 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:onClick="onClick">
 
         <ImageView
             android:id="@+id/iv_set"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:drawable/ic_menu_preferences"  />
+            android:background="@mipmap/pic_setting"  />
         <TextView
             android:id="@+id/tv_set"
             android:layout_width="wrap_content"
